@@ -7,3 +7,7 @@
 ## Install Vite
 
 `bun install vite`
+
+## Install TailwindCSS
+
+`bun install tailwindcss @tailwindcss/vite`
