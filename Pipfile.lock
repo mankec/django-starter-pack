@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "c08be948d60174cf313d38b9a769179c9baaf0bdec7fa528d2a4df1f13356419"
+            "sha256": "4f82ab18355ae7208ae8f47a9345c839549c7c695f87be62f3b8072a64a4503d"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -58,6 +58,15 @@
             "markers": "python_version >= '3.9'",
             "version": "==4.1"
         },
+        "environs": {
+            "hashes": [
+                "sha256:1abd3e3a5721fb09797438d6c902bc2f35d4580dfaffe68b8ee588b67b504e13",
+                "sha256:f7b8f6fcf3301bc674bc9c03e39b5986d116126ffb96764efd34c339ed9464ee"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.10'",
+            "version": "==14.5.0"
+        },
         "executing": {
             "hashes": [
                 "sha256:3632cc370565f6648cc328b32435bd120a1e4ebb20c77e3fdde9a13cd1e533c4",
@@ -90,6 +99,14 @@
             ],
             "markers": "python_version >= '3.6'",
             "version": "==0.19.2"
+        },
+        "marshmallow": {
+            "hashes": [
+                "sha256:084a9466111b7ec7183ca3a65aed758739af919fedc5ebdab60fb39d6b4dc121",
+                "sha256:ba40340683a2d1c15103647994ff2f6bc2c8c80da01904cbe5d96ee4baa78d9f"
+            ],
+            "markers": "python_version >= '3.10'",
+            "version": "==4.2.2"
         },
         "matplotlib-inline": {
             "hashes": [
@@ -144,6 +161,14 @@
             ],
             "markers": "python_version >= '3.8'",
             "version": "==2.19.2"
+        },
+        "python-dotenv": {
+            "hashes": [
+                "sha256:42667e897e16ab0d66954af0e60a9caa94f0fd4ecf3aaf6d2d260eec1aa36ad6",
+                "sha256:b81ee9561e9ca4004139c6cbba3a238c32b03e4894671e181b671e8cb8425d61"
+            ],
+            "markers": "python_version >= '3.9'",
+            "version": "==1.2.1"
         },
         "sqlparse": {
             "hashes": [
