@@ -17,6 +17,12 @@ from environs import Env
 env = Env()
 
 
+DJANGO_ENV = env.str("DJANGO_ENV", "development")
+IS_DEVELOPMENT = DJANGO_ENV == "development"
+IS_TEST = DJANGO_ENV == "test"
+IS_PRODUCTION = DJANGO_ENV == "production"
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -28,7 +34,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-&20zj^osd4t7&8bcjmglo-)@^-@2nmnwzm1jf5ts4b)bdzpwj_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True if IS_DEVELOPMENT else False
 
 ALLOWED_HOSTS = []
 
@@ -67,6 +73,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'core.context_processors.environments',
             ],
         },
     },
